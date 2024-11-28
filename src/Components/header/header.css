@@ -1,0 +1,117 @@
+.header {
+  display: grid;
+  grid-template-columns: 5vw 3fr 6fr 1fr 1fr 5vw;
+  background-color: rgba(0, 0, 0, 0.927);
+  height: 4.6rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  grid-column: 2/3;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.input-box {
+  grid-column: 3/4;
+  display: flex;
+  align-items: center;
+}
+.input-box > input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+}
+.home {
+  grid-column: 4/5;
+  display: flex;
+  align-self: center;
+  color: white;
+  font-size: 18px;
+}
+.home > a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+.home > a:hover {
+  color: rgba(255, 255, 255, 0.728);
+}
+.cart-symbol-cont {
+  grid-column: 5/6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cart {
+  background-color: rgb(75, 230, 75);
+  color: white;
+  padding: 8px 14px;
+  min-width: 80%;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.cart:hover {
+  background-color: green;
+}
+
+.cart-img {
+  font-size: 24px;
+}
+.cart-value {
+  margin: 0 4px;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    display: grid;
+    grid-template-columns: 4vw 3fr 6fr 2fr 2fr 4vw;
+    background-color: rgba(0, 0, 0, 0.811);
+    height: 4.6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    display: grid;
+    grid-template-columns: 3vw 4fr 8fr 2fr 2fr 3vw;
+    background-color: rgba(0, 0, 0, 0.811);
+    height: 4.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: grid;
+    grid-template-columns: 2vw 5fr 10fr 3fr 3fr 2vw;
+    background-color: rgba(0, 0, 0, 0.811);
+    height: 4.6rem;
+  }
+  .logo {
+    font-size: 16px;
+  }
+  .cart {
+    padding: 8px 10px;
+  }
+  .input-box > input {
+    font-size: 12px;
+  }
+  .input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
